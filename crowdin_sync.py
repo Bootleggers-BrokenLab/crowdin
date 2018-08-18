@@ -83,8 +83,8 @@ def push_as_commit(base_path, path, name, branch):
 
     # Push commit
     try:
-        repo.git.push('git@github.com:BootleggersROM/%s' % (name),
-                      'HEAD:%s' % branch)
+        repo.git.push('https://github.com/BootleggersROM/%s' % (name),
+                      '%s' % branch)
         print('Successfully pushed commit for %s' % name)
     except:
         print('Failed to push commit for %s' % name, file=sys.stderr)
@@ -111,8 +111,8 @@ def find_xml(base_path):
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Synchronising CypherOS' translations with Crowdin")
-    parser.add_argument('-b', '--branch', help='CypherOS branch',
+        description="Synchronising Bootleggers' translations with Crowdin")
+    parser.add_argument('-b', '--branch', help='Bootleggers branch',
                         required=True)
     parser.add_argument('-c', '--config', help='Custom yaml config')
     parser.add_argument('--upload-sources', action='store_true',
@@ -288,7 +288,7 @@ def main():
     args = parse_args()
     default_branch = args.branch
 
-    base_path_env = 'AOSCP_CROWDIN_BASE_PATH'
+    base_path_env = 'BOOTLEGGERS_CROWDIN_BASE_PATH'
     base_path = os.getenv(base_path_env)
 
     if base_path is None:
