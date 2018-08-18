@@ -27,7 +27,7 @@ files:
 
   # framework-res
   -
-    source:      '/frameworks/base/core/res/res/values/gzosp_strings.xml'
+    source:      '/frameworks/base/core/res/res/values/bootleg_strings.xml'
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: &anchor
       android_code:
@@ -242,11 +242,11 @@ files:
 
   # SystemUI
   -
-    source:      '/frameworks/base/packages/SystemUI/res/values/gzosp_strings.xml'
+    source:      '/frameworks/base/packages/SystemUI/res/values/bootleg_strings.xml'
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: *anchor
   -
-    source:      '/frameworks/base/packages/SystemUI/res-keyguard/values/gzosp_strings.xml'
+    source:      '/frameworks/base/packages/SystemUI/res-keyguard/values/bootleg_strings.xml'
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
@@ -275,11 +275,4 @@ files:
     source:      '/packages/apps/Settings/res/values/bootleg_strings.xml'
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: *anchor
-  -
-    source:      '/packages/apps/Settings/res/values/gzosp_strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-  -
-    source:      '/packages/apps/Settings/res/values/projekt_strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
+
