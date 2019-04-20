@@ -84,7 +84,7 @@ def push_as_commit(base_path, path, name, branch):
     # Push commit
     try:
         repo.git.push('https://github.com/BootleggersROM/%s' % (name),
-                      '%s' % branch)
+                      'HEAD:%s' % branch)
         print('Successfully pushed commit for %s' % name)
     except:
         print('Failed to push commit for %s' % name, file=sys.stderr)
