@@ -1,4 +1,4 @@
-# oreo.1.yaml
+# pasta.yaml
 #
 # Crowdin configuration file for BootleggersROM
 #
@@ -260,6 +260,16 @@ files:
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
+  # Phonograph (music)
+  -
+    source:      '/packages/apps/Phonograph/app/src/main/res/values/strings.xml'
+    translation: '/%original_path%-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+  -
+    source:      '/packages/apps/Phonograph/app/src/main/res/values/shishu_strings.xml'
+    translation: '/%original_path%-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
   # Settings
   -
     source:      '/packages/apps/Settings/res/values/bootleg_strings.xml'
@@ -267,8 +277,7 @@ files:
     languages_mapping: *anchor
 
   # ShishuOTA
-  #-
-  #  source:      '/packages/apps/ShishuOTA/res/values/strings.xml'
-  #  translation: '/%original_path%-%android_code%/%original_file_name%'
-  #  languages_mapping: *anchor
-
+  -
+    source:      '/packages/apps/ShishuOTA/res/values/strings.xml'
+    translation: '/%original_path%-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
